@@ -98,7 +98,7 @@ Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Co
       "url": "ws://localhost:7020",
       "contentLength": false
     },
-    "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[],\"capabilities\":{\"window\":{\"workDoneProgress\":false}},\"initializationOptions\":{\"ltex\":{\"language\":\"en-US\",\"additionalRules\":{\"motherTongue\":\"\"},\"dictionary\":{},\"disabledRules\":{},\"enabledRules\":{}}}}"
+    "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[],\"capabilities\":{\"workspace\":{\"configuration\":true},\"window\":{\"workDoneProgress\":false}},\"initializationOptions\":{\"ltex\":{\"language\":\"en-US\",\"additionalRules\":{\"motherTongue\":\"\"},\"dictionary\":{},\"disabledRules\":{},\"enabledRules\":{}}}}"
   }
 ]
 ```
