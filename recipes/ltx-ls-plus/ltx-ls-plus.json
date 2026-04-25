@@ -1,0 +1,21 @@
+[
+  {
+    "id": "ltex-ls",
+    "name": "LTeX LS (LanguageTool)",
+    "enabled": true,
+    "fileExtensions": ["tex", "latex", "bib", "md", "markdown"],
+    "languageIdMap": {
+      "tex": "latex",
+      "latex": "latex",
+      "bib": "bibtex",
+      "md": "markdown",
+      "markdown": "markdown"
+    },
+    "transportConfig": {
+      "type": "websocket",
+      "url": "ws://localhost:7020",
+      "contentLength": false
+    },
+    "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[],\"capabilities\":{\"window\":{\"workDoneProgress\":false}},\"initializationOptions\":{\"ltex\":{\"language\":\"en-US\",\"additionalRules\":{\"motherTongue\":\"\"},\"dictionary\":{},\"disabledRules\":{},\"enabledRules\":{}}}}"
+  }
+]
