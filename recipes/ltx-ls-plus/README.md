@@ -124,5 +124,4 @@ Common things to check:
 * If you change the proxy port, update `transportConfig.url`.
 * If diagnostics do not appear, restart both the proxy and TeXlyre.
 
-```
 
