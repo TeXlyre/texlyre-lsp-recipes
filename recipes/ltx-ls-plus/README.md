@@ -83,10 +83,12 @@ Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Co
     "id": "ltex-ls",
     "name": "LTeX LS Plus",
     "enabled": true,
-    "fileExtensions": ["tex", "latex", "bib", "md", "markdown"],
+    "fileExtensions": ["tex", "latex", "typ", "typst", "bib", "md", "markdown"],
     "languageIdMap": {
       "tex": "latex",
       "latex": "latex",
+      "typ": "typst",
+      "typst": "typst",
       "bib": "bibtex",
       "md": "markdown",
       "markdown": "markdown"
