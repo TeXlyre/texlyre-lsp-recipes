@@ -15,11 +15,11 @@ Download and extract LTeX LS Plus from the releases page.
 Example for Linux x64:
 
 ```bash
-VERSION="18.7.0-alpha.nightly.2026-04-25"
+VERSION="18.7.0"
 ARCHIVE="ltex-ls-plus-${VERSION}-linux-x64.tar.gz"
 
 curl -L -o "$ARCHIVE" \
-  "https://github.com/ltex-plus/ltex-ls-plus/releases/download/nightly/$ARCHIVE"
+  "https://github.com/ltex-plus/ltex-ls-plus/releases/download/$VERSION/$ARCHIVE"
 
 tar -xzf "$ARCHIVE"
 ````
@@ -27,7 +27,7 @@ tar -xzf "$ARCHIVE"
 This creates a directory such as:
 
 ```bash
-ltex-ls-plus-18.7.0-alpha.nightly.2026-04-25
+ltex-ls-plus-18.7.0
 ```
 
 LTeX LS Plus requires Java. If Java is not already installed, install a recent
@@ -52,14 +52,14 @@ cargo install lsp-ws-proxy --locked
 Start the proxy and launch LTeX LS Plus over stdio:
 
 ```bash
-lsp-ws-proxy -l 127.0.0.1:7020 -- ./ltex-ls-plus-18.7.0-alpha.nightly.2026-04-25/bin/ltex-ls-plus
+lsp-ws-proxy -l 127.0.0.1:7020 -- ./ltex-ls-plus-18.7.0/bin/ltex-ls-plus
 ```
 
 If you use a manually downloaded JRE, set `JAVA_HOME` first:
 
 ```bash
 export JAVA_HOME="/path/to/jre"
-lsp-ws-proxy -l 127.0.0.1:7020 -- ./ltex-ls-plus-18.7.0-alpha.nightly.2026-04-25/bin/ltex-ls-plus
+lsp-ws-proxy -l 127.0.0.1:7020 -- ./ltex-ls-plus-18.7.0/bin/ltex-ls-plus
 ```
 
 * The proxy listens on `ws://localhost:7020`
@@ -110,13 +110,13 @@ Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Co
 To check that the server starts correctly, run it directly first:
 
 ```bash
-./ltex-ls-plus-18.7.0-alpha.nightly.2026-04-25/bin/ltex-ls-plus
+./ltex-ls-plus-18.7.0/bin/ltex-ls-plus
 ```
 
 To confirm the WebSocket proxy is listening:
 
 ```bash
-lsp-ws-proxy -l 127.0.0.1:7020 -- ./ltex-ls-plus-18.7.0-alpha.nightly.2026-04-25/bin/ltex-ls-plus
+lsp-ws-proxy -l 127.0.0.1:7020 -- ./ltex-ls-plus-18.7.0/bin/ltex-ls-plus
 ```
 
 Common things to check:
