@@ -1,0 +1,21 @@
+[
+    {
+        "id": "tinymist",
+        "name": "Tinymist (Typst)",
+        "enabled": true,
+        "fileExtensions": [
+            "typ",
+            "typst"
+        ],
+        "languageIdMap": {
+            "typ": "typst",
+            "typst": "typst"
+        },
+        "transportConfig": {
+            "type": "websocket",
+            "url": "ws://localhost:7030",
+            "contentLength": false
+        },
+        "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[],\"capabilities\":{\"workspace\":{\"configuration\":false}},\"initializationOptions\":{\"semanticTokens\":\"disable\",\"systemFonts\":false}}"
+    }
+]
