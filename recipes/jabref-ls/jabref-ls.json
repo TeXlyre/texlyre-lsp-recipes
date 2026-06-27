@@ -1,0 +1,21 @@
+[
+    {
+        "id": "jabref-ls",
+        "name": "JabRef LS",
+        "enabled": true,
+        "fileExtensions": [
+            "bib",
+            "bibtex"
+        ],
+        "languageIdMap": {
+            "bib": "bibtex",
+            "bibtex": "bibtex"
+        },
+        "transportConfig": {
+            "type": "websocket",
+            "url": "ws://localhost:7021",
+            "contentLength": false
+        },
+        "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
+    }
+]
