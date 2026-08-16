@@ -1,0 +1,20 @@
+[
+  {
+    "id": "texlab",
+    "name": "TexLab (LaTeX)",
+    "enabled": true,
+    "fileExtensions": ["tex", "latex", "bib", "bibtex"],
+    "languageIdMap": {
+      "tex": "latex",
+      "latex": "latex",
+      "bib": "bibtex",
+      "bibtex": "bibtex"
+    },
+    "transportConfig": {
+      "type": "websocket",
+      "url": "ws://localhost:7031",
+      "contentLength": false
+    },
+    "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[],\"capabilities\":{\"workspace\":{\"configuration\":true}},\"initializationOptions\":{}}"
+  }
+]
